@@ -3,7 +3,7 @@ let allUsers = [];
 
 // Fetch users from Spring Boot API and display
 function fetchUsers() {
-    fetch('/client/users')
+    fetch('/users')
         .then(response => response.json())
         .then(users => {
             allUsers = users;
@@ -76,3 +76,4 @@ document.addEventListener('click', function(e) {
 
 // Initial load
 fetchUsers();
+
